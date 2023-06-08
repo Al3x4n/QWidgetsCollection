@@ -36,13 +36,13 @@ MainWindow::~MainWindow()
 void MainWindow::onAddDockWidget() {
 	QDockWidget* dockWidget = new studio::FootageListDock(this);;
 	QAction* action = qobject_cast<QAction*>(sender());
-	if (!action->data().compare("left")) { 
+    if (!action->data().toString().compare("left")) {
 		addDockWidget(Qt::LeftDockWidgetArea, dockWidget);
 	}
-	else if (!action->data().compare("right")) {
+    else if (!action->data().toString().compare("right")) {
 		addDockWidget(Qt::RightDockWidgetArea, dockWidget);
 	}
-	else if (!action->data().compare("top")) {
+    else if (!action->data().toString().compare("top")) {
 		addDockWidget(Qt::TopDockWidgetArea, dockWidget);
 	}
 	else {

@@ -11,9 +11,9 @@ public:
 	MainWindow(QWidget *parent = Q_NULLPTR); 
 
 protected: 
-	virtual void MainWindow::mouseMoveEvent(QMouseEvent *e) override;
-	virtual void MainWindow::mousePressEvent(QMouseEvent *e) override;
-	virtual void MainWindow::mouseReleaseEvent(QMouseEvent *) override;
+    virtual void mouseMoveEvent(QMouseEvent *e) override;
+    virtual void mousePressEvent(QMouseEvent *e) override;
+    virtual void mouseReleaseEvent(QMouseEvent *) override;
 
 private slots:
 	void onCloseClicked(bool checked = false); 

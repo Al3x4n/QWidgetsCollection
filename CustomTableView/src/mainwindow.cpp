@@ -7,6 +7,7 @@
 #include <QPainter>
 #include <QTextEdit>
 #include <QHBoxLayout>
+#include <QHeaderView>
 
 MainWindow::MainWindow(QWidget *parent)
 	: QWidget(parent)
